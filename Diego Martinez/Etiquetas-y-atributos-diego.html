@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8">
+        <title>Etiquetas y atributos</title>
+    </head>
+    <body>
+        <h1>Tarea: Etiquetas y atributos</h1>
+        <hr>
+        <p>
+            <b>Indicación:</b> Elige 2 etiquetas por categoría basado en los apuntes
+            (todas excepto las de son de color rojo) e investiga los atributos que 
+            pueden ser utilizados en dichas etiquetas.
+        </p>
+        <p>Etiquetas elegidas:</p>
+        <ul>
+            <li><b>Etiquetas multimedia:</b> &lt;img&gt; y &lt;video&gt;.</li>
+            <li><b>Etiquetas para estructurar contenido:</b> &lt;ul&gt; y &lt;ol&gt;.</li>
+            <li><b>Etiqueta para enlace:</b> &lt;a&gt;.</li>
+            <li><b>Etiquetas para tablas:</b> &lt;table&gt; y &lt;colgroup&gt;.</li>
+            <li><b>Etiquetas para formularios:</b> &lt;button&gt; y &lt;input&gt;.</li>
+        </ul>
+
+        <hr>
+
+
+        <!-- Etiquetas multimedia -->
+
+
+        <h2>Etiquetas multimedia.</h2>
+        <hr>
+        <h3>Etiqueta &lt;img&gt</h3>
+        <p>La etiqueta &lt;img&gt representa una imagen en nuestro documento HTML. Algunos de sus atributos son:</p>
+        <ul>
+            <li><b>alt: </b>Representa un texto alternativo que describe la imagen en caso de que la misma no pueda ser mostrada.</li>
+            <li><b>height:</b>Define la altura de la imagen, se pueden poner el número específico de pixeles o en porcentaje.</li>
+            <li><b>src: </b>Nombre de la imagen o su URL, básicamente sirve para insertar la imagen.</li>
+            <li><b>width: </b>Define la anchura de la imagen, se puede poner el número específico de pixeles o en porcentaje.</li>
+            <li><b>title: </b>Mostrará el contenido de este argumento cuando el usuario coloque el click sobre la imagen.</li>
+        </ul>
+        <p>Ejemplo usando estas 5 propiedades:</p>
+        <img src="../PaisajeUrbano.jpg" alt="Paisaje Urbano" width="30%" height="30%" title="Imagen de paisaje urbano">
+        <p>Código usado para el ejemplo:</p>
+        <pre>
+            <code>
+&lt;img src = "../PaisajeUrbano.jpg alt="Imagen de paisaje urbano" width="30%" height="30%" title="Paisaje urbano"&gt;
+            </code>
+        </pre>
+        <h3>Etiqueta &lt;video&gt</h3>
+        <p>La etiqueta &lt;video&gt representa un video en el documento HTML. Algunos de sus atributos son: </p>
+        <ul>
+            <li><b>src: </b>Nombre del archivo de video.</li>
+            <li><b>controls: </b>Indica si se deben mostrar los controles del reproductor.</li>
+            <li><b>height: </b>Define la altura del video en pixeles o porcentajes.</li>
+            <li><b>loop: </b>Indica si el video debe reproducirse una y otra vez.</li>
+            <li><b>poster: </b>Especifica una imagen para mostrar en caso de que no se pueda reproducir el video.</li>
+            <li><b>title: </b>Especifica una breve descripción del video que los navegadores y tecnologias de asistencia pueden mostrar.</li>
+            <li><b>width: </b>Define la anchura del video en pixeles o porcentajes.</li>
+        </ul>
+        <p>Ejemplo usando estas 7 propiedades:</p>
+        <video 
+            src="../Video.mp4" autoplay controls height="30%" loop 
+            poster="../PaisajeUrbano.jpg" title="Calles de Nueva York" width="30%">
+        </video>
+        <p>Código usado para el ejemplo:</p>
+        <pre>
+            <code>
+&lt;video src = "../Video.mp4 controls height="30%" loop 
+poster="../PaisajeUrbano.jpg" title="Calles de Nueva York" width="30%"&gt;&lt;/video&gt;
+            </code>
+        </pre>
+
+
+<!-- Etiquetas para estructurar contenido -->
+
+
+        <hr>
+        <h2>Etiquetas para estructurar contenido.</h2>
+        <hr>
+        <h3>Etiqueta &lt;ul&gt;</h3>
+        <p>
+            La etiqueta &lt;ul&gt; sirve para crear una lista desordenada (Unorder List). Los atributos de esta etiqueta
+            van dirigidos a su diseño, en este caso mostraré solo 3:
+        </p>
+        <ul>
+            <li><b>disc: </b>Representa la viñeta como un disco (un círculo relleno).</li>
+            <li><b>square: </b>Representa la viñeta como un cuadrado.</li>
+            <li><b>circle: </b>Representa la viñeta como un circulo (sin relleno a diferencia de disc)</li>
+        </ul>
+        <p>Ejemplos usando las 3 propiedades:</p>
+        <ul style="list-style-type:disc">
+            <li>Veracruz</li>
+            <li>Queretaro</li>
+            <li>Puebla</li>
+        </ul>
+        <pre>
+            <code>
+&lt;ul style="list-style-type:disc"&gt;
+    &lt;li&gt;Veracruz&lt;/li&gt;
+    &lt;li&gt;Queretaro&lt;/li&gt;
+    &lt;li&gt;Puebla&lt;/li&gt;
+&lt;/ul&gt;
+            </code>
+        </pre>
+
+        <ul style="list-style-type:square">
+            <li>Oaxaca</li>
+            <li>Guanajuato</li>
+            <li>Michoacan</li>
+        </ul>
+        <pre>
+            <code>
+&lt;ul style="list-style-type:square"&gt;
+    &lt;li&gt;Oaxaca&lt;/li&gt;
+    &lt;li&gt;Guanajuato&lt;/li&gt;
+    &lt;li&gt;Michoacan&lt;/li&gt;
+&lt;/ul&gt;
+            </code>
+        </pre>
+
+        <ul style="list-style-type:circle">
+            <li>Sinaloa</li>
+            <li>CDMX</li>
+            <li>Nuevo León</li>
+        </ul>
+        <pre>
+            <code>
+&lt;ul style="list-style-type:circle"&gt;
+    &lt;li&gt;Sinaloa&lt;/li&gt;
+    &lt;li&gt;CDMX&lt;/li&gt;
+    &lt;li&gt;Nuevo León&lt;/li&gt;
+&lt;/ul&gt;
+            </code>
+        </pre>
+        <h3>Etiqueta &lt;ol&gt;</h3>
+        <p>
+            La etiqueta &lt;ol&gt; sirve para crear una lista ordenada (Order List). Usando el atributo type, podemos
+            definir el símbolo que se mostrará en nuestra lista ordenada. A continuación se muestran las opciones para el
+            atributo type: 
+        </p>
+        <ul>
+            <li><b>1: </b>Números (viene por defecto) 1,2,3...</li>
+            <li><b>A: </b>Letras mayúsculas A,B,C...</li>
+            <li><b>a: </b>Letras minúsculas a,b,c</li>
+            <li><b>l: </b>Números romanos en mayúsculas I,II,III...</li>
+            <li><b>i: </b>Números romanos en minúsculas i,ii,iii...</li>
+        </ul>
+        <p>
+            Aunado a los atributos para el diseño del símbolo, existen otros 2 atributos que se pueden usar para otras finalidades:
+        </p>
+        <ul>
+            <li><b>start: </b>Sirve para indicar a la lista un número de inicio con el cual empezará a contar la lista.</li>
+            <li><b>reversed: </b>Para que los elementos se muestren de manera descendente.</li>
+        </ul>
+        <p>Ejemplos usando los argumentos anteriores:</p>
+        <ol type="1" start="4" reversed>
+            <li>Houston Rockers</li>
+            <li>San Antonio Spurs</li>
+            <li>Indiana Pacers</li>
+        </ol>
+        <pre>
+            <code>
+&lt;ol type="1" start="4" reversed&gt;
+    &lt;li&gt;Houston Rockets&lt;/li&gt;
+    &lt;li&gt;San Antonio Spurs&lt;/li&gt;
+    &lt;li&gt;Indiana Pacers&lt;/li&gt;
+&lt;/ol&gt;
+            </code>
+        </pre>
+        <ol type="A" start="3">
+            <li>Sacramento Kings</li>
+            <li>Memphis Grizzlies</li>
+            <li>Miami Heat</li>
+        </ol>
+        <pre>
+            <code>
+&lt;ol type="A" start="3" &gt;
+    &lt;li&gt;Sacramento Kings&lt;/li&gt;
+    &lt;li&gt;Memphis Grizzlies&lt;/li&gt;
+    &lt;li&gt;Miami Heat&lt;/li&gt;
+&lt;/ol&gt;
+            </code>
+        </pre>
+        <ol type="a" start="3" reversed>
+            <li>Los Angeles Lakers</li>
+            <li>Los Angeles Clippers</li>
+            <li>Golden State Warriors</li>
+        </ol>
+        <pre>
+            <code>
+&lt;ol type="a" start="3" reversed&gt;
+    &lt;li&gt;Los Angeles Lakers&lt;/li&gt;
+    &lt;li&gt;Los Angeles Clippers&lt;/li&gt;
+    &lt;li&gt;Golden State Warriors&lt;/li&gt;
+&lt;/ol&gt;
+            </code>
+        </pre>
+        <ol type="I">
+            <li>Philadelfia 76´s</li>
+            <li>Boston Celtics</li>
+            <li>Brooklyn Nets</li>
+        </ol>
+        <pre>
+            <code>
+&lt;ol type="I"&gt;
+    &lt;li&gt;Philadelfia 76´s&lt;/li&gt;
+    &lt;li&gt;Boston Celtics&lt;/li&gt;
+    &lt;li&gt;Brooklyn Nets&lt;/li&gt;
+&lt;/ol&gt;
+            </code>
+        </pre>
+        <ol type="i">
+            <li>Chicago Bulls</li>
+            <li>Detroit Pistons</li>
+            <li>Toronto Raptors</li>
+        </ol>
+        <pre>
+            <code>
+&lt;ol type="i" start="3" reversed&gt;
+    &lt;li&gt;Los Angeles Lakers&lt;/li&gt;
+    &lt;li&gt;Los Angeles Clippers&lt;/li&gt;
+    &lt;li&gt;Golden State Warriors&lt;/li&gt;
+&lt;/ol&gt;
+            </code>
+        </pre>
+
+        <!-- Etiqueta para enlace -->
+        
+        <hr>
+        <h2>Etiqueta para enlace &lt;a&gt;</h2>
+        <hr>
+
+        <p>
+            Esta etiqueta recibe el nombre de <b>anchor</b> y sirve para que al hacer click, el usuario pueda
+            navegar a otra página web del especificada, ya sea una en general dentro de internet, o una del propio proyecto. 
+            Algunos de los atributos que ocupa son:
+        </p>
+        <ul>
+            <li><b>href: </b>Contiene una URL o un fragmento de URL al cual apunta el enlace.</li>
+            <li>
+                <b>target: </b>Especifica en donde desplegar la URL enlazada. Sus opciones son self, para que en la misma
+                pestaña se cambie al enlace, o blank, para que el enlace se abra en una pestaña nueva.
+            </li>
+        </ul>
+        <p>Algunos ejemplos de estos argumentos:</p>
+        <ul>
+            <li><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/a" target="_blank">Documentación de etiqueta anchor.</a></li>
+            <li><a href="https://www.uaq.mx/">Página de la UAQ.</a></li>
+        </ul>
+
+        <!-- Etiqueta para tablas -->
+
+
+        <hr>
+        <h2>Etiqueta para tablas</h2>
+        <hr>
+        <h3>Etiqueta &lt;table&gt;</h3>
+
+        <p>Sirve para representar una tabla.</p>
+        <ul>
+            <li><b>tr: </b>Crea una fila en una tabla.</li>
+            <li><b>th: </b>Crea el nombre de una columna de la tabla.</li>
+            <li><b>td: </b>Crea una casilla de información en la tabla.</li>
+        </ul>
+
+        <h3>Etiqueta &lt;colgroup&gt;</h3>
+        <p>Sirve para especificar informacion visual.</p>
+        <ul>
+            <li><b>span: </b>Sirve para decir cuántas columnas queremos afectar con dichos cambios.</li>
+            <li><b>style: </b>Sirve para especificar la parte visual de la tabla.</li>
+            <li>Ambos argumentos se ponene dentro de la etiqueta col que se encuentra dentro de colgroup.</li>
+        </ul>
+
+        <p>Ejemplo de table y colgroup:</p>
+
+        <table>
+            <colgroup>
+                <col span="2" style="background-color: aquamarine;">
+                <col style="background-color: burlywood;">
+            </colgroup>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido Paterno</th>
+                <th>Apellido Materno</th>
+            </tr>
+            <tr>
+                <td>Diego</td>
+                <td>Martínez</td>
+                <td>García</td>
+            </tr>
+            <tr>
+                <td>Rafael</td>
+                <td>Bárcena</td>
+                <td>González</td>
+            </tr>
+            <tr>
+                <td>Abril Monserrat</td>
+                <td>Hernández</td>
+                <td>Trejo</td>
+            </tr>
+        </table>
+
+
+<!-- Etiqueta para formularios -->
+
+
+        <hr>
+        <h2>Etiqueta para formularios</h2>
+        <hr>
+        <h3>Etiqueta &lt;button&gt;</h3>
+
+        <p>Sirve para crear un boton. Algunos de sus argumentos son:</p>
+        <ul>
+            <li><b>name: </b>Asigna un nombre de control.</li>
+            <li>
+                <b>type: </b>Indica el tipo de boton. Submit para configurar boton de envío. Reset para configurar un botón de reincio.
+            </li>
+            <li><b>disabled: </b>Indica que el control está desabilitado.</li>
+        </ul>
+
+        <p>Ejemplos:</p>
+        <button name="button-1" type="reset" >Boton reset</button>
+        <button name="button-2" type="submit">Boton submit</button>
+
+        <h3>Etiqueta &lt;input&gt;</h3>
+        <p>Input sirve para introducir datos. El argumento más conocido de input es type, sirve para definir qué tipo de dato ingresará.</p>
+        <ul>
+            <li><b>text: </b>Ingresa texto.</li>
+            <li><b>date: </b>Ingresa una fecha.</li>
+            <li><b>color: </b>Ingresa un color.</li>
+            <li><b>email: </b>Ingresa un email.</li>
+        </ul>
+
+        <p>Así mismo, podemos usar el atributo placeholder para que haya un texto que le diga al usuario qué hacer en el input. Ejemplo:</p>
+
+        <form>
+            <input type="text" placeholder="Ingrese su nombre">
+            <input type="date">
+            <input type="color">
+            <input type="email" placeholder="Ingrese su correo electrónico">
+        </form>
+    </body>
+</html>
